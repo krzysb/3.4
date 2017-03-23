@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2.4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="videoPlayer" class="videoPlayer">
+            <video width="100%">
+              <source src="video/big_buck_bunny.mp4" type="video/mp4"/>
+              <source src="video/big_buck_bunny.webm" type="video/webm"/>
+          </video>
+            <div class="controls">
+                <div class="leftControls">
+                    <div class="playPause fa fa-play"> </div>
+                </div>
+
+                <div class="progressBar">
+                    <input type="range" id="progress" min="0" max="100" value="0">
+                    
+          
+                </div>
+                <div class="rightControls pull-right">
+                    <div class="time">
+                        <span class="currentTime">0:00</span> /
+                        <span class="totalTime">0:00</span>
+                    </div>
+<!--
+                    <div class="volume fa fa-volume-up">
+                        <div class="fullVolume">
+                            <div class="currentVolume"></div>
+                        </div>
+                    </div>
+-->
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <p class="text-right">
+            <small>Video from <a href="http://clips.vorwaerts-gmbh.de">http://clips.vorwaerts-gmbh.de</a> </small>
+        </p>
+
+
+    </div>
+
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
